@@ -710,13 +710,14 @@ select {
 .logo a {
   display: flex;
   color: var(--foreground);
-  gap: 0.5em;
+  gap: 0.2em;
   text-decoration: none;
 }
 
 .logo a svg {
   width: 45px;
   height: 45px;
+  padding: 0.1em;
   stroke-width: 2px;
 }
 

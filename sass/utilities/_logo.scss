@@ -11,12 +11,13 @@
     a {
         display: flex;
         color: var(--foreground);
-        gap: .5em;
+        gap: .2em;
         text-decoration: none;
 
         svg {
             width: 45px;
             height: 45px;
+            padding: .1em;
             stroke-width: 2px;
         }
     }

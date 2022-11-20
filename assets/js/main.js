@@ -46,3 +46,24 @@ navToggler.addEventListener("click", () => {
 /**
  *	Portfolio Buttons Function
  **/
+const btnEcommerce = document.querySelector("#eCommerce");
+const btnAllItems = document.querySelector("#allItems");
+
+const allItems = document.querySelectorAll(".portfolio__item")[0];
+const ecommerceItems = document.querySelectorAll(".commerce")[0];
+
+btnEcommerce.addEventListener('click', () => {
+	ecommerceItems.style.display = "block";
+	allItems.style.display = "none";
+
+	btnEcommerce.classList.add("active");
+	btnAllItems.classList.remove("active");
+});
+
+btnAllItems.addEventListener('click', () => {
+	allItems.style.display = "block";
+	ecommerceItems.style.display = "initial";
+
+	btnEcommerce.classList.remove("active");
+	btnAllItems.classList.add("active");
+});
