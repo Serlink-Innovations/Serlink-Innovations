@@ -112,8 +112,12 @@
   height: auto;
 }
 
-.hero #hero__contentContainer #hero__contentContainerText .clients #clients__clientList .clients__clientLogo img {
-  max-width: 100%;
+.hero #hero__contentContainer #hero__contentContainerText .clients #clients__clientList .clients__clientLogo img,
+.hero #hero__contentContainer #hero__contentContainerText .clients #clients__clientList .clients__clientLogo svg {
+  max-width: 150px;
+  height: 50px;
+  border: none;
+  color: var(--foreground);
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
