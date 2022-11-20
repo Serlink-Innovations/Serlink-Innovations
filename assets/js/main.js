@@ -42,3 +42,7 @@ navToggler.addEventListener("click", () => {
 		navigationMenu.classList.add("active");
 	}
 });
+
+/**
+ *	Portfolio Buttons Function
+ **/
