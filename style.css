@@ -101,6 +101,7 @@
 
 .hero #hero__contentContainer #hero__contentContainerText .clients #clients__clientList {
   width: 100%;
+  align-items: center;
   display: flex;
   gap: 1em;
 }
