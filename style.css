@@ -509,7 +509,7 @@ select {
   width: 100%;
   display: block;
   padding-inline: 1em;
-  position: relative;
+  position: absolute;
 }
 
 .navigation__container .navigation {
@@ -528,6 +528,10 @@ select {
 .navigation__container .navigation .active {
   display: grid !important;
   padding: 1em;
+}
+
+.navigation__container .navigation .active #quoteBtn {
+  display: none;
 }
 
 .navigation__container .navigation #navigation__navbar {
@@ -556,6 +560,12 @@ select {
   text-decoration: none;
   padding: 1.5rem;
   text-align: center;
+}
+
+.navigation__container .navigation #navigation__navbar ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.4em;
+  text-decoration-thickness: 0.1em;
 }
 
 .navigation__container .navigation #navigation__buttons {
@@ -765,5 +775,5 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   display: flex;
-  position: absolute;
+  position: relative;
 }/*# sourceMappingURL=style.css.map */

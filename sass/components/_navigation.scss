@@ -59,6 +59,10 @@
         .active {
             display: grid !important;
             padding: 1em;
+
+            #quoteBtn {
+                display: none;
+            }
         }
 
         #navigation__navbar {
@@ -85,6 +89,12 @@
                         padding: 1.5rem;
                         text-align: center;
                     }
+                }
+
+                li:hover {
+                    text-decoration: underline;
+                    text-underline-offset: 0.4em;
+                    text-decoration-thickness: 0.1em;
                 }
             }
         }
