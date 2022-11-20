@@ -1,0 +1,16 @@
+.btn {
+    width: max-content;
+    height: fit-content;
+    border: none;
+    border-radius: 100vmax;
+    display: block;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: .7rem 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--text-white);
+}

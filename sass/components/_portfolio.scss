@@ -1,0 +1,103 @@
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 70px;
+
+    #portfolio__header {
+        display: grid;
+        place-content: center;
+        justify-content: center;
+        text-align: center;
+
+        h4 {
+            color: var(--secondary);
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            margin-bottom: .5rem;
+        }
+
+        h1 {
+            font-size: 45px;
+            line-height: 2.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+    }
+
+    #portfolio__buttons {
+        display: flex;
+        gap: .5em;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-block: 2em;
+
+        .active {
+            color: var(--white);
+            background-color: var(--primary);
+            font-weight: bold;
+        }
+
+        button {
+            border: none;
+            border-radius: 100vmax;
+            display: block;
+            padding: .4em 1em;
+        }
+    }
+
+    #portfolio__itemContainer {
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+
+        .portfolio__item {
+            display: flex;
+            flex-direction: column;
+
+            .portfolio__itemImg:hover::before {
+                content: url("/assets/img/icons/eye_icon.svg");
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color: #000000, $alpha: 0.5);
+                position: absolute;
+                display: grid;
+                place-content: center;
+                position: absolute;
+            }
+
+            .portfolio__itemImg {
+                width: 100%;
+                height: 350px;
+                border-radius: 0.4vmax;
+                position: relative;
+                overflow: hidden;
+                margin-bottom: .75em;
+
+                img {
+                    width: auto;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 1.25rem;
+                line-height: 1.75rem;
+                margin-bottom: .75rem;
+            }
+
+            p {
+                font-family: inter,
+                    sans-serif;
+                padding-block: 1em;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,105 @@
+@media screen and (min-width: 996px) {
+
+    @media (max-width: 1245px) {
+        #quoteBtn {
+            display: none !important;
+        }
+    }
+
+    .navigation__container {
+        margin-inline: auto;
+
+        .navigation {
+            align-items: center;
+            display: flex !important;
+            padding-block: 1em;
+            justify-content: space-between;
+
+            #navigation__navbar {
+                width: 100%;
+                background-color: var(--background) !important;
+                color: var(--foreground) !important;
+                display: flex !important;
+                justify-content: space-between;
+
+                ul {
+                    display: inherit;
+                }
+            }
+
+            #navigation__buttons>#hamburgerToggle {
+                display: none !important;
+            }
+
+        }
+    }
+}
+
+.navigation__container {
+    width: 100%;
+    display: block;
+    padding-inline: 1em;
+    position: relative;
+
+    .navigation {
+        width: 100%;
+        background-color: var(--background);
+        color: var(--foreground);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "navigation__logo  navigation__buttons"
+            "navigation__navbar navigation__navbar"
+        ;
+
+        #navigation__logo {
+            grid-area: navigation__logo;
+        }
+
+        .active {
+            display: grid !important;
+            padding: 1em;
+        }
+
+        #navigation__navbar {
+            align-items: center;
+            background-color: var(--foreground);
+            color: var(--background);
+            display: none;
+            grid-area: navigation__navbar;
+            z-index: 9999;
+
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: block;
+
+                    a {
+                        color: inherit;
+                        display: block;
+                        font-family: Inter, san-serif;
+                        text-decoration: none;
+                        padding: 1.5rem;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        #navigation__buttons {
+            align-items: center;
+            display: flex;
+            grid-area: navigation__buttons;
+            margin-left: 1em;
+
+            .material-symbols-outlined {
+                cursor: pointer;
+                font-size: 2em;
+                padding: .5em;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,29 @@
+:root {
+    --primary: #224c8d;
+    --secondary: #6db5e7;
+    --secondary-hover: #4ca4e4;
+
+    --white: #FFFFFF;
+
+    --text-white: #ffffff;
+    --text-black: #000000;
+
+    --background: #ffffff;
+    --foreground: #000000;
+    --shadow: 0;
+
+    //Fonts
+    --default-font: Inter, san-serif;
+}
+
+.darkMode {
+    --background: #1c1d24;
+    --foreground: #ffffff;
+    --shadow: 255;
+
+    svg {
+        border-radius: 100vmax;
+        border: 1px solid rgba($color: #FFFFFF, $alpha: 1.0);
+        fill: white !important;
+    }
+}

@@ -1,0 +1,29 @@
+.logo {
+    max-height: inherit;
+    max-width: 15rem;
+    align-items: center;
+    display: flex;
+    font-family: "Azonix";
+    font-weight: bold;
+    font-size: 2rem;
+    padding-right: auto;
+
+    a {
+        display: flex;
+        color: var(--foreground);
+        gap: .5em;
+        text-decoration: none;
+
+        svg {
+            width: 45px;
+            height: 45px;
+            stroke-width: 2px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .logo>a>svg {
+        display: none !important;
+    }
+}

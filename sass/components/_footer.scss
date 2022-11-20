@@ -1,0 +1,11 @@
+section.copyright {
+    background-color: var(--primary);
+    color: var(--text-white);
+    display: flex;
+    font-weight: 500;
+    font-size: clamp(0.8rem, 3vw, 1em);
+    letter-spacing: 1px;
+    padding: 1em;
+    text-align: center;
+    justify-content: center;
+}
