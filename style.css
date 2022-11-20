@@ -509,7 +509,7 @@ select {
   width: 100%;
   display: block;
   padding-inline: 1em;
-  position: absolute;
+  position: relative;
 }
 
 .navigation__container .navigation {
@@ -775,5 +775,5 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   display: flex;
-  position: relative;
+  position: absolute;
 }/*# sourceMappingURL=style.css.map */
