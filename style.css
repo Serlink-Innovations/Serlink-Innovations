@@ -72,7 +72,7 @@
 
 .hero #hero__contentContainer #hero__contentContainerText h1 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: clamp(42px, 10vw, 3.5em);
   line-height: 1.375;
 }
 
