@@ -67,7 +67,8 @@
             color: var(--background);
             display: none;
             grid-area: navigation__navbar;
-            z-index: 9999;
+            z-index: 10;
+            border-radius: 1vmax;
 
             ul {
                 margin: 0;
